@@ -1,0 +1,15 @@
+$mansalvaFont: var(--mansalva-font);
+$palanquinDarkFont: var(--palanquinDark-font);
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.logoText {
+  font-family: $palanquinDarkFont;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white);
+}

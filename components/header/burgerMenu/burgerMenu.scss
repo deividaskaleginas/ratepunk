@@ -1,0 +1,30 @@
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+
+  .line {
+    width: 1.8rem;
+    height: 0.4rem;
+    background-color: var(--burgerBackground);
+    border: 0.1rem solid var(--burgerBorder);
+    border-radius: 6.4rem;
+    margin-bottom: 0.2rem;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+  }
+
+  .line.active {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}

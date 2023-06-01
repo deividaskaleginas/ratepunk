@@ -1,0 +1,1 @@
+html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}body{margin:0;padding:0}a,a:visited,a:active{text-decoration:none}.logoText{font-family:var(--palanquinDark-font);font-weight:700;font-size:26px;color:var(--white)}:root{--primary: #ff9933;--white: #fff;--grey: #909394;--burgerBackground: #bdc1c3;--burgerBorder: #1f343e}/*# sourceMappingURL=style.css.map */

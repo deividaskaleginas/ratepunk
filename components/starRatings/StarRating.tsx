@@ -4,7 +4,7 @@ import "./starRatings.scss";
 
 export const StarRating: React.FC = () => {
   return (
-    <div>
+    <div className="star-rating-block">
       <div className="star-ratings">
         <div className="fill-ratings">
           <span>★★★★★</span>

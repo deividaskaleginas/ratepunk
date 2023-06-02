@@ -22,7 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ browser, setBrowser }) => {
     } else if (userAgent.includes("Chrome")) {
       return "Chrome";
     } else if (userAgent.includes("Safari")) {
-      return "Safri";
+      return "Safari";
     } else {
       return "unknow";
     }

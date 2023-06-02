@@ -1,3 +1,5 @@
+@use "../utils/" as u;
+
 $mansalvaFont: var(--mansalva-font);
 $palanquinDarkFont: var(--palanquinDark-font);
 
@@ -5,7 +7,6 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--black);
   cursor: pointer;
 }
 
@@ -18,6 +19,10 @@ a:active {
 
   span {
     color: var(--orange);
+  }
+
+  @include u.breakpoint(desktop) {
+    font-size: 3.4rem;
   }
 }
 

@@ -1,3 +1,5 @@
+@use "../../styles//utils/" as u;
+
 .star-ratings {
   unicode-bidi: bidi-override;
   color: rgba(255, 255, 255, 0.529);
@@ -27,5 +29,13 @@
     display: block;
     z-index: 0;
     background-color: none;
+  }
+}
+
+@include u.breakpoint(desktop) {
+  .star-rating-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }

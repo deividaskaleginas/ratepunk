@@ -1,10 +1,15 @@
+import { DownloadBtn } from "@/components/buttons/downloadBtn/DownloadBtn";
 import { SignUpForm } from "@/components/signUpForm/SignUpForm";
 import { StarRating } from "@/components/starRatings/StarRating";
 import React from "react";
 
 import "./heroSection.scss";
 
-export const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  browser: string;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({ browser }) => {
   const sentence = "Get lowest prices, cashback, rebooking hack & more";
   return (
     <section className="heroSection">
@@ -15,10 +20,15 @@ export const HeroSection: React.FC = () => {
           </h1>
           <h2 className="heroSectionSentence">{sentence.toUpperCase()}</h2>
         </div>
-        <div>
+        <div className="signUpFormBlock">
           <SignUpForm />
         </div>
         <StarRating />
+        <div className="downloadBtn">
+          <DownloadBtn browser={browser} size="big">
+            Download Now - It&apos;s Free
+          </DownloadBtn>
+        </div>
       </div>
     </section>
   );

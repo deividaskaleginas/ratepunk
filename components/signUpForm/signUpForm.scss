@@ -1,0 +1,35 @@
+.signUpEmailBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0 1.6rem;
+  height: 3.6rem;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+  transition: all 0.25s ease-in-out 0s;
+}
+
+input {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

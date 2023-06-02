@@ -4,6 +4,10 @@
   display: none;
 }
 
+.test {
+  line-height: 0;
+}
+
 @include u.breakpoint(desktop) {
   .mobile {
     display: none;

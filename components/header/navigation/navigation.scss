@@ -1,5 +1,9 @@
 @use "../../../styles//utils/" as u;
 
+#browserExtension {
+  color: var(--navLinkActive);
+}
+
 @include u.breakpoint-down(mobile) {
   .header-menu.active {
     max-height: 55vh;
@@ -29,9 +33,13 @@
 }
 
 @include u.breakpoint(desktop) {
+  .header-menu {
+    display: flex;
+  }
+
   nav {
     display: flex;
-    gap: 3.2rem;
+    gap: 2rem;
 
     .nav-link {
       color: var(--white);

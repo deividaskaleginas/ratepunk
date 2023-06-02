@@ -8,3 +8,22 @@ a:active {
   color: var(--black);
   cursor: pointer;
 }
+
+.heroSectionTitle {
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+
+  span {
+    color: var(--orange);
+  }
+}
+
+.heroSectionSentence {
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+}

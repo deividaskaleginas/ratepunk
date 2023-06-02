@@ -15,3 +15,23 @@ body {
   padding: 0;
   line-height: 2.2rem;
 }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Noto Sans, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: normal;
+  border-radius: 0.8rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: 0.1rem solid var(--black);
+  outline: none;
+  text-decoration: none;
+  background-color: #6d7a80;
+  transition: all 0.25s ease-in-out;
+  width: 100%;
+}

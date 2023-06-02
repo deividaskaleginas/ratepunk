@@ -1,11 +1,13 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 
 import "./burgerMenu.scss";
 
-export const BurgerMenu: React.FC = () => {
-  const [open, setOpen] = useState(false);
+interface BurgerProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const BurgerMenu: React.FC<BurgerProps> = ({ open, setOpen }) => {
   return (
     <div className="burger-menu" role="button" onClick={() => setOpen(!open)}>
       {open}

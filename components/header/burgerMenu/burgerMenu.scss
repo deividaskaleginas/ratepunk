@@ -1,3 +1,5 @@
+@use "../../../styles//utils/" as u;
+
 .burger-menu {
   display: flex;
   align-items: center;
@@ -8,7 +10,7 @@
     width: 1.8rem;
     height: 0.4rem;
     background-color: var(--burgerBackground);
-    border: 0.1rem solid var(--burgerBorder);
+    border: 0.1rem solid var(--black);
     border-radius: 6.4rem;
     margin-bottom: 0.2rem;
     transform-origin: 1px;
@@ -26,5 +28,9 @@
     &:nth-child(3) {
       transform: rotate(-45deg);
     }
+  }
+
+  @include u.breakpoint(desktop) {
+    display: none;
   }
 }

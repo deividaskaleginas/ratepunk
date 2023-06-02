@@ -1,1 +1,1 @@
-header{position:relative;display:flex;align-items:center;justify-content:space-between;height:3.6rem}/*# sourceMappingURL=header.css.map */
+header{position:relative;display:flex;align-items:center;justify-content:space-between;padding:0 1rem;height:3.6rem}@media(min-width: 70rem){header{background-color:var(--headerDesktopBackground)}}/*# sourceMappingURL=header.css.map */

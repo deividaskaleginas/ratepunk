@@ -1,0 +1,14 @@
+@use "../../../styles//utils/" as u;
+
+.desktop {
+  display: none;
+}
+
+@include u.breakpoint(desktop) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+}

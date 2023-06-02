@@ -1,7 +1,14 @@
+@use "../../styles/utils/" as u;
+
 header {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1rem;
   height: 3.6rem;
+
+  @include u.breakpoint(desktop) {
+    background-color: var(--headerDesktopBackground);
+  }
 }

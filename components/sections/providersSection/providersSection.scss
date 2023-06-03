@@ -1,12 +1,22 @@
+@use "../../../styles//utils/" as u;
+
 .providers {
+  display: flex;
+  justify-content: center;
   background-color: var(--lightBlue);
   .providers-container {
+    max-width: 70rem;
     padding: 3rem 1rem;
     .textBlock {
     }
     .providers-block {
       display: grid;
       gap: 5rem;
+
+      @include u.breakpoint(desktop) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
       .provider-block {
         position: relative;
 

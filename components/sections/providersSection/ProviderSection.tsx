@@ -35,6 +35,8 @@ import wotif from "../../../public/assets/svg/providers/wotif.svg";
 import ratepunk from "../../../public/assets/svg/rp-coin.svg";
 import { ProvidersContentData } from "@/types/dataTypes";
 
+//TODO: Add Alt text
+
 const PROVIDERS: ProvidersContentData[] = [
   {
     image: expediaBack,

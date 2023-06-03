@@ -16,7 +16,6 @@ export type FeaturesContentData = {
   text: string;
   icon: StaticImageData;
   className: string;
-  // onClick: React.MouseEventHandler<HTMLDivElement>;
 };
 
 export type ProvidersContentData = {
@@ -24,4 +23,11 @@ export type ProvidersContentData = {
   svg: StaticImageData;
   rpIcon?: StaticImageData;
   offer?: string;
+};
+
+export type HowItWorksContentData = {
+  image: StaticImageData;
+  number: string;
+  title: string;
+  description: string;
 };

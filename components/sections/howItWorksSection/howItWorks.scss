@@ -1,0 +1,25 @@
+.howItWorks {
+  background-color: var(--iconBackgroundYellow);
+
+  .howItWorksContainer {
+    padding: 3rem 1rem;
+    .textBlock {
+      padding-bottom: 2rem;
+    }
+    .contentContainer {
+      .imageBlock {
+        width: 100%;
+
+        img {
+          object-fit: contain;
+          width: 100%;
+          position: relative;
+          height: unset;
+        }
+      }
+
+      .contentBlock {
+      }
+    }
+  }
+}

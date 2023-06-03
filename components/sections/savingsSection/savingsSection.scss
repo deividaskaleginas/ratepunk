@@ -1,0 +1,33 @@
+.savings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+
+  .savingsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+
+    .savingsAmount {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .coinIconBlock {
+        width: 100%;
+
+        img {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+
+    .titleBlock {
+      text-align: center;
+    }
+  }
+}

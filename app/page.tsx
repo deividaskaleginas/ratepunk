@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/sections/heroSection/HeroSection";
 import { HowItWorksSection } from "@/components/sections/howItWorksSection/HowItWorksSection";
 import { MediaSection } from "@/components/sections/mediaSection/MediaSection";
 import { ProvidersSection } from "@/components/sections/providersSection/ProviderSection";
+import { SavingSection } from "@/components/sections/savingsSection/SavingsSection";
 import { useState } from "react";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <FeaturesSection browser={browser} />
         <ProvidersSection />
         <HowItWorksSection browser={browser} />
+        <SavingSection />
       </main>
     </>
   );

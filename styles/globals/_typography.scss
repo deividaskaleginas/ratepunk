@@ -12,12 +12,20 @@ a:active {
 
 .smallText {
   line-height: 1.6rem;
+
+  @include u.breakpoint(desktop) {
+    font-size: 1.1rem;
+  }
 }
 
 .sextionTextBlue {
   color: var(--lightBlue);
   font-size: 2rem;
   font-weight: 700;
+
+  @include u.breakpoint(desktop) {
+    font-size: 2.4rem;
+  }
 }
 
 .heroSectionTitle {
@@ -53,12 +61,20 @@ a:active {
   font-weight: 700;
   line-height: 2.4rem;
   margin: 0;
+
+  @include u.breakpoint(desktop) {
+    font-size: 2.4rem;
+  }
 }
 
 .featureTitle {
   font-size: 1.1rem;
   margin: 0;
   line-height: 1;
+
+  @include u.breakpoint(desktop) {
+    font-size: 1.3rem;
+  }
 }
 
 .featureText {
@@ -66,4 +82,8 @@ a:active {
   line-height: 1.4rem;
   margin: 0;
   color: var(--paragraphGrey);
+
+  @include u.breakpoint(desktop) {
+    font-size: 1rem;
+  }
 }

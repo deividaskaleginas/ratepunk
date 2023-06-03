@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <HeroSection browser={browser} />
         <MediaSection />
-        <FeaturesSection />
+        <FeaturesSection browser={browser} />
       </main>
     </>
   );

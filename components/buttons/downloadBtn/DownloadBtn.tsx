@@ -24,12 +24,12 @@ export const DownloadBtn: React.FC<DownloadBtnProps> = ({
     <button
       className={
         size === "big"
-          ? "big"
+          ? "btn big"
           : size === "medium"
-          ? "medium"
+          ? "btn medium"
           : size === "small"
           ? "small"
-          : "mediumOrange"
+          : "btn mediumOrange"
       }
     >
       <Image

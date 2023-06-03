@@ -10,6 +10,11 @@ import ratings from "../../../public/assets/images/features/ratings.webp";
 import rebooking from "../../../public/assets/images/features/rebooking.webp";
 import rpIcon from "../../../public/assets/svg/rp-coin.svg";
 import { FeaturesContentData } from "@/types/dataTypes";
+import { DownloadBtn } from "@/components/buttons/downloadBtn/DownloadBtn";
+
+interface FeatureSectionProps {
+  browser: string;
+}
 
 const FEATURES_CONTENT: FeaturesContentData[] = [
   {
@@ -44,7 +49,7 @@ const FEATURES_CONTENT: FeaturesContentData[] = [
   },
 ];
 
-export const FeaturesSection: React.FC = () => {
+export const FeaturesSection: React.FC<FeatureSectionProps> = ({ browser }) => {
   const [selected, setSelected] = useState("priceComparison");
   return (
     <section className="features">
@@ -115,13 +120,16 @@ export const FeaturesSection: React.FC = () => {
             })}
           </div>
         </div>
-        <div className="titleBlock smallText">
+        <div className="titleBlock smallText sectionBottom">
           <p>
             Ratepunk is designed to help travelers not only save on hotels but
             also help them find the information they&apos;re looking for easily
             without a hassle.
             <b>It is a FREE tool and a MUST-HAVE for every traveler!</b>
           </p>
+          <DownloadBtn size="mediumOrange" browser={browser}>
+            Get Ratepunk - It&apos;s Free
+          </DownloadBtn>
         </div>
       </div>
     </section>

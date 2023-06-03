@@ -8,6 +8,7 @@ import "./howItWorks.scss";
 import firsStepImg from "../../../public/assets/images/howItWorks/01.webp";
 import secoundStepImg from "../../../public/assets/images/howItWorks/02.webp";
 import thirdStepImg from "../../../public/assets/images/howItWorks/03.webp";
+import { DownloadBtn } from "@/components/buttons/downloadBtn/DownloadBtn";
 
 const HOW_IT_WORKS: HowItWorksContentData[] = [
   {
@@ -33,7 +34,13 @@ const HOW_IT_WORKS: HowItWorksContentData[] = [
   },
 ];
 
-export const HowItWorksSection: React.FC = () => {
+interface HowItWorksSectionProps {
+  browser: string;
+}
+
+export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
+  browser,
+}) => {
   return (
     <section className="howItWorks">
       <div className="howItWorksContainer">
@@ -47,10 +54,19 @@ export const HowItWorksSection: React.FC = () => {
                 <Image src={image} alt="Desktop print screen animation" />
               </div>
               <div className="contentBlock">
-                <div>
-                  <h2 className="howItWorksSectionNumbers">{number}</h2>
-                  <h3 className="howItWorksTitle">{title}</h3>
-                  <p className="howItWorksParagraph">{description}</p>
+                <div className="contentAndButton">
+                  <div>
+                    {" "}
+                    <h2 className="howItWorksSectionNumbers">{number}</h2>
+                    <h3 className="howItWorksTitle">{title}</h3>
+                    <p className="howItWorksParagraph">{description}</p>
+                  </div>
+
+                  <div>
+                    <DownloadBtn browser={browser} size="medium">
+                      It&apos;s Free - Add to {browser}
+                    </DownloadBtn>
+                  </div>
                 </div>
               </div>
             </div>

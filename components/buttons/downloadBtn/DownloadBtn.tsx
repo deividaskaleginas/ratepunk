@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Image from "next/image";
 
 import "./downloadBtn.scss";
@@ -10,7 +10,7 @@ import mozilla from "../../../public/assets/svg/mozillaIcon.svg";
 //TODO: describe props size
 
 interface DownloadBtnProps {
-  children: string;
+  children: string | ReactNode;
   size: string;
   browser: string;
 }

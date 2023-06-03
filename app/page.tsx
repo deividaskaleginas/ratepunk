@@ -18,7 +18,7 @@ export default function Home() {
         <MediaSection />
         <FeaturesSection browser={browser} />
         <ProvidersSection />
-        <HowItWorksSection />
+        <HowItWorksSection browser={browser} />
       </main>
     </>
   );

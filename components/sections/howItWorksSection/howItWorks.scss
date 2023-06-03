@@ -1,14 +1,36 @@
+@use "../../../styles//utils/" as u;
+
 .howItWorks {
+  display: flex;
+  justify-content: center;
   background-color: var(--iconBackgroundYellow);
 
   .howItWorksContainer {
+    max-width: 70rem;
     padding: 3rem 1rem;
+
+    @include u.breakpoint(desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 0;
+    }
     .textBlock {
       padding-bottom: 2rem;
     }
     .contentContainer {
+      @include u.breakpoint(desktop) {
+        display: flex;
+        align-items: flex-end;
+        gap: 4rem;
+        &:nth-child(3) {
+          flex-direction: row-reverse;
+        }
+      }
+
       .imageBlock {
         width: 100%;
+        flex: 2;
 
         img {
           object-fit: contain;
@@ -19,6 +41,13 @@
       }
 
       .contentBlock {
+        flex: 1;
+
+        .contentAndButton {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+        }
       }
     }
   }

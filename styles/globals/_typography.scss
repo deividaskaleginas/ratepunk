@@ -10,6 +10,12 @@ a:active {
   cursor: pointer;
 }
 
+.sextionTextBlue {
+  color: var(--lightBlue);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .heroSectionTitle {
   color: var(--white);
   font-size: 1.8rem;
@@ -36,4 +42,24 @@ a:active {
 .signUpEmailText {
   color: var(--white);
   font-weight: 700;
+}
+
+.featuresSextionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin: 0;
+}
+
+.featureTitle {
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.featureText {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  margin: 0;
+  color: var(--paragraphGrey);
 }

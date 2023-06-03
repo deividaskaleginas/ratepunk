@@ -17,6 +17,12 @@ const LOGOS: MediaData[] = [
   { iconData: dailyMail, name: "Daily mail", href: "/" },
   { iconData: alo, name: "Alo", href: "/" },
   { iconData: washingtonPost, name: "Washington post", href: "/" },
+  { iconData: dailyMail, name: "Daily mail", href: "/" },
+  { iconData: alo, name: "Alo", href: "/" },
+  { iconData: washingtonPost, name: "Washington post", href: "/" },
+  { iconData: dailyMail, name: "Daily mail", href: "/" },
+  { iconData: alo, name: "Alo", href: "/" },
+  { iconData: washingtonPost, name: "Washington post", href: "/" },
 ];
 
 export const MediaSection: React.FC = () => {

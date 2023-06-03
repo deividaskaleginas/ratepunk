@@ -10,3 +10,11 @@ export type MediaData = {
   name: string;
   href: string;
 };
+
+export type FeaturesContentData = {
+  title: string;
+  text: string;
+  icon: StaticImageData;
+  className: string;
+  // onClick: React.MouseEventHandler<HTMLDivElement>;
+};

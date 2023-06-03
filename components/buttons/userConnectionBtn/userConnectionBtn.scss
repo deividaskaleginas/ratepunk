@@ -7,6 +7,10 @@
 
 .isActive {
   background-color: var(--white);
+
+  a {
+    color: var(--black);
+  }
 }
 
 .notActive {

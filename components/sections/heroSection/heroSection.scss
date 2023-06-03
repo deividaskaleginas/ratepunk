@@ -4,6 +4,7 @@
   background-image: url("../../../public//assets//images/hero.webp");
   background-position: center center;
   background-size: cover;
+  height: calc(100vh - 5rem - 4.5rem);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,3 +33,5 @@
     }
   }
 }
+
+// 80 72

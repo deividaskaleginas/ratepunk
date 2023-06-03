@@ -1,6 +1,9 @@
-section {
+.mediaSection {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   white-space: nowrap;
+  height: 5rem;
 
   @keyframes slide {
     from {
@@ -15,9 +18,9 @@ section {
 .logos-slide {
   display: inline-block;
   padding: 2rem 0;
-  animation: 5s slide infinite linear;
+  animation: 14s slide infinite linear;
 
   a {
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
 }

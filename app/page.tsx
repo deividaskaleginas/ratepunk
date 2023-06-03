@@ -1,6 +1,7 @@
 "use client";
 
 import { Header } from "@/components/header/Header";
+import { FeaturesSection } from "@/components/sections/featuresSection/FeaturesSection";
 import { HeroSection } from "@/components/sections/heroSection/HeroSection";
 import { MediaSection } from "@/components/sections/mediaSection/MediaSection";
 import { useState } from "react";
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <HeroSection browser={browser} />
         <MediaSection />
+        <FeaturesSection />
       </main>
     </>
   );

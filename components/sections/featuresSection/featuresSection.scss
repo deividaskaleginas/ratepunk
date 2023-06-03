@@ -1,0 +1,113 @@
+.features {
+  background-color: var(--featuresSectionBackground);
+
+  .features-container {
+    padding: 3rem 1rem;
+
+    .titleBlock {
+      text-align: center;
+    }
+    .features-content {
+      margin: 2rem 0;
+      border-radius: 0.9375rem;
+      background-color: var(--featuresSectionBackgroundBlue);
+      .image-block {
+        width: 100%;
+        padding: 1rem;
+
+        img {
+          object-fit: contain;
+          width: 100%;
+          position: relative;
+          height: unset;
+        }
+      }
+      .content-block {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem 1rem 1rem;
+        .block {
+          display: flex;
+          gap: 1rem;
+          padding: 0 0 0 2rem;
+          opacity: 0.5;
+          .iconBlock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 3rem;
+            min-width: 3rem;
+            max-height: 3rem;
+            max-width: 3rem;
+            border-radius: 5px;
+          }
+          .textBlock {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+          }
+        }
+      }
+
+      .priceComparison .iconBlock {
+        background-color: var(--lightBlue);
+      }
+
+      .cashback .iconBlock {
+        background-color: var(--iconBackgroundGreen);
+      }
+      .rebooking .iconBlock {
+        background-color: var(--iconBackgroundOrangeRed);
+      }
+      .ratings .iconBlock {
+        background-color: var(--iconBackgroundYellow);
+      }
+      .priceMonitoring .iconBlock {
+        background-color: var(--iconBackgroundOrange);
+      }
+
+      .priceComparison.active {
+        border-left: 4px solid var(--lightBlue);
+        opacity: 1;
+        transition: all 0.5s;
+      }
+      .cashback.active {
+        border-left: 4px solid var(--iconBackgroundGreen);
+        opacity: 1;
+        transition: all 0.5s;
+      }
+      .rebooking.active {
+        border-left: 4px solid var(--iconBackgroundOrangeRed);
+        opacity: 1;
+        transition: all 0.5s;
+      }
+      .ratings.active {
+        border-left: 4px solid var(--iconBackgroundYellow);
+        opacity: 1;
+        transition: all 0.5s;
+      }
+      .priceMonitoring.active {
+        border-left: 4px solid var(--iconBackgroundOrange);
+        opacity: 1;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .features-content.blue {
+    background-color: var(--featuresSectionBackgroundBlue);
+  }
+  .features-content.green {
+    background-color: var(--featuresSectionBackgroundGreen);
+  }
+  .features-content.orangeRed {
+    background-color: var(--featuresSectionBackgroundOrangeRed);
+  }
+  .features-content.yellow {
+    background-color: var(--featuresSectionBackgroundYellow);
+  }
+  .features-content.orange {
+    background-color: var(--featuresSectionBackgroundOrange);
+  }
+}

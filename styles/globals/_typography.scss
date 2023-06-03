@@ -87,3 +87,23 @@ a:active {
     font-size: 1rem;
   }
 }
+
+.providerOfferText {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.providersTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.providerTitleText {
+  text-align: center;
+  font-weight: 1rem;
+  color: var(--white);
+  line-height: 1.2;
+}

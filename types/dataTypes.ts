@@ -18,3 +18,10 @@ export type FeaturesContentData = {
   className: string;
   // onClick: React.MouseEventHandler<HTMLDivElement>;
 };
+
+export type ProvidersContentData = {
+  image: StaticImageData;
+  svg: StaticImageData;
+  rpIcon?: StaticImageData;
+  offer?: string;
+};

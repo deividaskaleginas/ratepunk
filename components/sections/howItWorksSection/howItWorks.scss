@@ -19,8 +19,11 @@
       padding-bottom: 2rem;
     }
     .contentContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       @include u.breakpoint(desktop) {
-        display: flex;
+        flex-direction: row;
         align-items: flex-end;
         gap: 4rem;
         &:nth-child(3) {

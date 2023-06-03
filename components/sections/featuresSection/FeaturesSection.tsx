@@ -115,6 +115,14 @@ export const FeaturesSection: React.FC = () => {
             })}
           </div>
         </div>
+        <div className="titleBlock smallText">
+          <p>
+            Ratepunk is designed to help travelers not only save on hotels but
+            also help them find the information they&apos;re looking for easily
+            without a hassle.
+            <b>It is a FREE tool and a MUST-HAVE for every traveler!</b>
+          </p>
+        </div>
       </div>
     </section>
   );

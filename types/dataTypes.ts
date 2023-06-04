@@ -31,3 +31,9 @@ export type HowItWorksContentData = {
   title: string;
   description: string;
 };
+
+export type FAQQuestionsData = {
+  question: string;
+  answer: string;
+  icon: StaticImageData;
+};

@@ -20,10 +20,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ browser }) => {
           </h1>
           <h2 className="heroSectionSentence">{sentence.toUpperCase()}</h2>
         </div>
-        <div className="signUpFormBlock">
-          <SignUpForm />
-        </div>
-        <StarRating />
+        <SignUpForm />
+        <StarRating color="white" />
         <div className="downloadBtn">
           <DownloadBtn browser={browser} size="big">
             Download Now - It&apos;s Free

@@ -1,7 +1,13 @@
+@use "../../styles//utils/" as u;
+
 .signUpEmailBlock {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @include u.breakpoint(desktop) {
+    display: none;
+  }
 }
 
 form {
@@ -14,6 +20,7 @@ form {
   display: flex;
   align-items: center;
   gap: 1rem;
+  border: 1px solid var(--black);
 
   padding: 0 1.6rem;
   height: 3.6rem;
@@ -32,4 +39,8 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
+}
+
+.signUpEmailText.black {
+  color: var(--black);
 }

@@ -7,11 +7,19 @@ import "../../styles/globals/_typography.scss";
 import emailIcon from "../../public/assets/svg/email-form.svg";
 import { SignUpEmailBtn } from "../buttons/signUpEmail/SignUpEmailBtn";
 
-export const SignUpForm: React.FC = () => {
+interface SignUpProps {
+  textColor?: string;
+}
+
+export const SignUpForm: React.FC<SignUpProps> = ({ textColor }) => {
   const [email, setEmail] = useState({ email: "" });
   return (
     <div className="signUpEmailBlock">
-      <span className="signUpEmailText">
+      <span
+        className={
+          textColor === "black" ? "signUpEmailText black" : "signUpEmailText"
+        }
+      >
         Sign up to receive a desktop reminder.
       </span>
       <form>

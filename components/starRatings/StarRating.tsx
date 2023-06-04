@@ -2,11 +2,15 @@ import React from "react";
 
 import "./starRatings.scss";
 
-export const StarRating: React.FC = () => {
+interface StarRatingProps {
+  color: "white" | "black";
+}
+
+export const StarRating: React.FC<StarRatingProps> = ({ color }) => {
   return (
     <div className="star-rating-block">
-      <div className="star-ratings">
-        <div className="fill-ratings">
+      <div className={`star-ratings ${color}`}>
+        <div className={`fill-ratings ${color}`}>
           <span>★★★★★</span>
         </div>
         <div className="empty-ratings">
@@ -14,7 +18,9 @@ export const StarRating: React.FC = () => {
         </div>
       </div>
       <div>
-        <span className="signUpEmailText">Trusted by 100k+ users</span>
+        <span className={`signUpEmailText ${color}`}>
+          Trusted by 100k+ users
+        </span>
       </div>
     </div>
   );

@@ -149,3 +149,20 @@ a:active {
   line-height: 1.4rem;
   color: var(--lightGrey);
 }
+
+.bannerSpan {
+  font-size: 1.2rem;
+  color: var(--lightBlue);
+  font-weight: 700;
+
+  @include u.breakpoint(desktop) {
+    font-size: 1.4rem;
+  }
+}
+
+.bannerTitle {
+  @include u.breakpoint(desktop) {
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+}

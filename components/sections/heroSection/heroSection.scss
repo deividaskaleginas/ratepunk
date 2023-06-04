@@ -22,9 +22,6 @@
       align-items: center;
       text-align: center;
     }
-    .signUpFormBlock {
-      display: none;
-    }
   }
 
   @include u.breakpoint-down(mobile) {

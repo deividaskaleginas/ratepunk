@@ -2,14 +2,24 @@
 
 .star-ratings {
   unicode-bidi: bidi-override;
-  color: rgba(255, 255, 255, 0.529);
+  &.white {
+    color: rgba(255, 255, 255, 0.529);
+  }
+  &.black {
+    color: rgba(121, 120, 120, 0.529);
+  }
   font-size: 1.8rem;
   position: relative;
   margin: 0;
   padding: 0;
   width: 9rem;
   .fill-ratings {
-    color: var(--white);
+    &.white {
+      color: var(--white);
+    }
+    &.black {
+      color: var(--black);
+    }
     padding: 0;
     position: absolute;
     z-index: 1;
@@ -17,9 +27,8 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    width: 89%;
+    width: 86%;
 
-    // Allows us to grab the width of the span elements
     span {
       display: inline-block;
     }

@@ -1,17 +1,23 @@
 .faqSection {
+  display: flex;
+  justify-content: center;
   background-color: var(--featuresSectionBackground);
   .faqSectionContainer {
+    width: 100%;
     max-width: 70rem;
     padding: 3rem 1rem;
     .questions {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      padding-top: 1rem;
       .question {
         border: 0.0625rem solid var(--black);
         border-radius: 0.5rem;
         padding: 1rem;
         background-color: var(--white);
+        cursor: pointer;
+
         .questionTop {
           display: flex;
           align-items: center;

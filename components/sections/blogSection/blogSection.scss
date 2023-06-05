@@ -1,0 +1,113 @@
+@use "../../../styles//utils/" as u;
+
+.blogSection {
+  background-color: var(--lightBlue);
+  .blogContainer {
+    padding: 3rem 1rem;
+    @include u.breakpoint(desktop) {
+      max-width: 70rem;
+      margin: 0 auto;
+    }
+    .blogSectionTitle {
+      margin: 0 0 16px;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .blogSectionSubTitle {
+      margin: 0 0 2rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: var(--white);
+
+      @include u.breakpoint(desktop) {
+        margin: 0 0 4rem;
+      }
+    }
+
+    .blogCards {
+      display: grid;
+      align-content: stretch;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 0 0 3rem;
+      max-width: 100%;
+      cursor: pointer;
+
+      @include u.breakpoint(desktop) {
+        grid-template-columns: 1fr repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .blogCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1.6rem;
+        background-color: var(--white);
+
+        .cardDate {
+          margin: 0 1rem 1rem;
+          color: var(--paragraphGrey);
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
+
+        .cardTitle {
+          margin: 0 1rem 1rem;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          color: var(--black);
+        }
+
+        .cardDesc {
+          margin: 0 1rem;
+          line-height: 1.2rem;
+          color: var(--black);
+        }
+
+        .blogImage {
+          max-width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-top-left-radius: 1.6rem;
+          border-top-right-radius: 1.6rem;
+        }
+
+        .ctaRow {
+          display: flex;
+          padding: 16px;
+
+          .readMoreButton {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid var(--black);
+            background-color: var(--white);
+          }
+        }
+      }
+      .blogCard:hover {
+        scale: 1.01;
+        transition: 0.5s ease-in;
+      }
+    }
+
+    .viewMoreButton {
+      display: block;
+      min-width: 320px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid var(--black);
+      background-color: var(--iconBackgroundYellow);
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      color: var(--white);
+    }
+  }
+}

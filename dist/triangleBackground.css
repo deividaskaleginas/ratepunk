@@ -1,0 +1,1 @@
+.triangleBackground{margin-top:-200px;width:100%}@media(max-width: 70rem){.triangleBackground{display:none}}.triangleBackground.left{border-left:100vw solid rgba(0,0,0,0)}.triangleBackground.right{border-right:100vw solid rgba(0,0,0,0)}.triangleBackground.lightBlue{border-bottom:20vh solid var(--lightBlue)}/*# sourceMappingURL=triangleBackground.css.map */

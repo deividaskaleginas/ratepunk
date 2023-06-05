@@ -1,3 +1,4 @@
+import { FEATURE } from "@/components/sections/featuresSection/FeaturesSection";
 import { StaticImageData } from "next/image";
 
 export type NavLinksData = {
@@ -15,7 +16,7 @@ export type FeaturesContentData = {
   title: string;
   text: string;
   icon: StaticImageData;
-  className: string;
+  className: FEATURE;
 };
 
 export type ProvidersContentData = {
@@ -36,4 +37,11 @@ export type FAQQuestionsData = {
   question: string;
   answer: string;
   icon: StaticImageData;
+};
+
+export type ReviewData = {
+  user: string;
+  browser: string;
+  rating: number;
+  review: string;
 };

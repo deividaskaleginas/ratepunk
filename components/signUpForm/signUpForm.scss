@@ -7,6 +7,14 @@
 
   @include u.breakpoint(desktop) {
     display: none;
+
+    &.subscribe {
+      display: flex;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 

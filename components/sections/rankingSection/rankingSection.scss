@@ -1,0 +1,138 @@
+@use "../../../styles//utils/" as u;
+
+.rankingSection {
+  position: relative;
+  background-color: var(--iconBackgroundYellow);
+  padding: 6rem 0rem 0rem;
+  margin: 0;
+
+  .rankingSectionContainer {
+    display: flex;
+    gap: 3rem;
+    padding: 0 1rem 2rem 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 70rem;
+
+    @include u.breakpoint(desktop) {
+      margin: 0 auto;
+      padding: 0 1rem;
+      max-width: 70rem;
+      flex-direction: row;
+    }
+
+    .rankingContent {
+      .rankingTitle {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        color: var(--black);
+
+        span {
+          color: var(--white);
+        }
+      }
+
+      .description {
+        margin-bottom: 3rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .rankingChart {
+      display: flex;
+      align-items: flex-end;
+      gap: 1rem;
+      width: 100%;
+      padding-top: 3rem;
+
+      @include u.breakpoint(desktop) {
+        width: 80%;
+        gap: 3rem;
+        white-space: nowrap;
+        padding: 6.25rem;
+        padding-left: 0;
+      }
+
+      .chartColumn {
+        background-color: var(--white);
+        position: relative;
+        width: 3.9375rem;
+        border-radius: 0.8rem;
+        height: 23.5rem;
+
+        @include u.breakpoint(desktop) {
+          width: 3.9375rem;
+          width: 6rem;
+        }
+
+        .chartLabel {
+          position: absolute;
+          justify-content: center;
+          top: -110px;
+          width: 100%;
+
+          @include u.breakpoint(desktop) {
+            top: -80px;
+          }
+
+          .iconWrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            left: 0.1rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: 0.25rem;
+            border-radius: 50%;
+            background-color: var(--white);
+
+            @include u.breakpoint(desktop) {
+              left: 1.2rem;
+            }
+
+            .flagIcon {
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              border: 1px solid var(--black);
+            }
+          }
+
+          .countryTitle {
+            margin: 0rem 0rem 0.5rem;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 0.875rem;
+
+            @include u.breakpoint(desktop) {
+              line-height: 1.2rem;
+              font-size: 1rem;
+            }
+          }
+
+          .userScore {
+            margin: 0rem 0rem 1rem 1.2rem;
+            font-size: 0.8rem;
+            line-height: 1rem;
+          }
+        }
+      }
+
+      .chartColumn.fifth {
+        height: 11.5rem;
+      }
+      .chartColumn.fourth {
+        height: 14.5rem;
+      }
+      .chartColumn.third {
+        height: 17.5rem;
+      }
+      .chartColumn.second {
+        height: 20.5rem;
+      }
+    }
+  }
+}

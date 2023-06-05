@@ -1,0 +1,22 @@
+@use "../../styles/utils/breakpoints" as u;
+
+.triangleBackground {
+  margin-top: -200px;
+  width: 100%;
+
+  @include u.breakpoint-down(desktop) {
+    display: none;
+  }
+}
+
+.triangleBackground.left {
+  border-left: 100vw solid transparent;
+}
+
+.triangleBackground.right {
+  border-right: 100vw solid transparent;
+}
+
+.triangleBackground.lightBlue {
+  border-bottom: 20vh solid var(--lightBlue);
+}

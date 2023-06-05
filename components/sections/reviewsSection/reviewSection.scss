@@ -1,0 +1,46 @@
+.reviewSection {
+  max-width: 70rem;
+  background-color: var(--iconBackgroundYellow);
+  .reviewSectionContainer {
+    padding: 3rem 1rem;
+    .reviewCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 1rem;
+      gap: 6rem;
+      padding: 1.5rem;
+      border-radius: 0.9375rem;
+      background-color: var(--white);
+      .reviewContentBlock {
+        display: flex;
+        flex-direction: column;
+
+        .userData {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .starsBlock {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            img {
+              object-fit: contain;
+              width: 1.375rem;
+              position: relative;
+              height: unset;
+            }
+          }
+        }
+        .reviewData {
+        }
+      }
+
+      .svgBlock {
+      }
+    }
+  }
+}

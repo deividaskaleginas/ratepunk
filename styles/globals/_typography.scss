@@ -188,3 +188,19 @@ a:active {
 .faqQuestionAnswerText {
   line-height: 1.5rem;
 }
+
+.reviewUsername {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.reviewUserBrowser {
+  margin: 0;
+  color: var(--lightGrey);
+}
+
+.userReviewText {
+  text-align: center;
+  line-height: 1.4rem;
+  color: var(--lightGrey);
+}

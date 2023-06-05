@@ -14,7 +14,7 @@ export const BannerSection: React.FC<BannerSectionProps> = ({
 }) => {
   return (
     <section className={`bannerSection ${bgColor}`}>
-      <Banner type="savings" />
+      <Banner type={type} />
     </section>
   );
 };

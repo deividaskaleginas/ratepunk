@@ -42,7 +42,7 @@ export const Banner: React.FC<BannerProps> = ({ type }) => {
           </div>
         ) : (
           <div className="bannerContainer">
-            <div className="bannerContent">
+            <div className="bannerContent newsletter">
               {" "}
               <div>
                 <Image src={newsletter} alt="Animated Ratepunk envelope" />
@@ -53,8 +53,12 @@ export const Banner: React.FC<BannerProps> = ({ type }) => {
                   <h1 className="bannerTitle">
                     We&apos;ve got a free spot for you
                   </h1>
+                  <p className="faqQuestionAnswerText">
+                    Join thousands of travelers to be at the center of travel
+                    news and deals.
+                  </p>
                 </div>
-                <SignUpForm />
+                <SignUpForm title={true} subscribe={true} />
               </div>
             </div>
           </div>
